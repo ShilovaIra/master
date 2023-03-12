@@ -5,7 +5,6 @@ from os.path import dirname, join
 import os
 import cv2
 
-
 max_delta2 = 0
 threshold = 0
 
@@ -84,13 +83,13 @@ def apply(path) -> None:
     plt.title("filtered")
     plt.savefig(filename)
 
-    filename = join(dirname(__file__), "./images/filtered_otsu.png")
+    #filename = join(dirname(__file__), "./images/filtered_otsu.png")
     filename2 = join(dirname(__file__), "./images/filtered_otsu_without_titile.png")
     plt.axis('off')
     plt.imshow(filtered, 'gray')
-    cv2.imwrite(filename2, filtered) #save image without title. works good
+    cv2.imwrite(filename2, filtered)
     #plt.title("filtered")
-    plt.savefig(filename)
+    #plt.savefig(filename)
 
     filename = join(dirname(__file__), "./images/foo.png")
     plt.figure(4)
@@ -101,7 +100,7 @@ def apply(path) -> None:
     # show all
 
 
-def hellopy(a):
+def execute_otsu(a):
     print(join(os.environ["HOME"]))
     print(join(dirname(__file__), "./images/3.png"))
     path = join(dirname(__file__), "./images/3.png")
