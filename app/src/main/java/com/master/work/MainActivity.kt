@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.chaquo.python.Python
 import com.master.work.constants.Constants.Companion.DEFAULT_DIR_FOR_READING
 import com.master.work.constants.Constants.Companion.IMAGE_PATH_OTSU_ALGORITHM
+import com.master.work.imageUtilities.ImageLoader
 import com.master.work.repository.InternalPhotoRepository
 import com.master.work.repository.PhotoRepository
 import java.io.File
@@ -38,12 +39,12 @@ class MainActivity : AppCompatActivity() {
             var file: File =  File(DEFAULT_DIR_FOR_READING, IMAGE_PATH_OTSU_ALGORITHM);
             imageView!!.setImageDrawable(Drawable.createFromPath(file.toString()));
         }
-
+        //MediaStore.Images.Media.insertImage(contentResolver, path, "", "");
     }
 
     private fun getPythonHelloWorld(): String {
         val python = Python.getInstance()
-        val pythonFile = python.getModule("HelloPython")
-        return pythonFile.callAttr("hellopy", "Ira").toString()
+        val pythonFile = python.getModule("OtsuThreshold")
+        return pythonFile.callAttr("execute_otsu", "Ira").toString()
     }
 }
