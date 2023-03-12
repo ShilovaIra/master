@@ -26,9 +26,8 @@ class ImageLoader {
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI
             }
             val contentValues = ContentValues()
-            contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, "testImage1.png")
+            contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, "testImage1.png") // change name
             contentValues.put(MediaStore.Images.Media.MIME_TYPE, "images/*")
-            println(context.filesDir.path)
             val uri: Uri? = contentResolver.insert(images, contentValues)
             loadFromContext(contentResolver, uri!!, context)
         }
