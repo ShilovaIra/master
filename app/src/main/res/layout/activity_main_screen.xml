@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity">
+
+    <ImageView
+        android:id="@+id/rectimage"
+        android:layout_width="411dp"
+        android:layout_height="273dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/SegmentationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/segmentation"
+        android:textColor="#323131"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <Button
+        android:id="@+id/takePhoto"
+        android:layout_width="273dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/take_photo"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/LoadFromLibrary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/LoadFromLibrary"
+        android:layout_width="273dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/load_from_library"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/read"
+        android:textColor="@color/white"
+        android:background="#3C3C3C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="read"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/VSU"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:text="@string/vsu_2023"
+        android:textColor="#323131"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

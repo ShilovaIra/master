@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" />
+    <string name="segmentation">Segmentation</string>
+    <string name="take_photo">Take photo</string>
+    <string name="load_from_library">Load from library</string>
+    <string name="vsu_2023">VSU, 2023</string>
+    <string name="select_segmentation_algoritm">Select segmentation \nalgorithm</string>
+    <string name="otsu">Otsu</string>
+    <string name="region_based">Region based</string>
+    <string name="edge_based">Edge-based</string>
+    <string name="k_means">K-means</string>
+    <string name="apply_all">Apply all</string>
+    <string name="large_text">Apply all</string>
+    <string name="action_settings">Settings</string>
+    <string name="segmentation_results">Segmentation \nresults</string>
+    <string name="segmentation_nresults">Segmentation \nresults</string>
+</resources>
